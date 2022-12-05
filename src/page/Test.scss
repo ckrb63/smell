@@ -1,0 +1,96 @@
+.test {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#181818, #181818);
+  // background-color: rgb(24, 24, 24);
+  transition: 1s;
+  &.end {
+    &.zero {
+      background: linear-gradient(#791c15, #6b6155, #181818);
+    }
+    &.one {
+      background: linear-gradient(#babdaa, #45524b, #181818);
+    }
+    &.two {
+      background: linear-gradient(#a8c8d5, #697c2b, #181818);
+    }
+    &.three {
+      background: linear-gradient(#833b47, #4d4689, #181818);
+    }
+    &.four {
+      background: linear-gradient(#d49351, #6b340d, #181818);
+    }
+    &.five {
+      background: linear-gradient(#269d25, #2c2c2c, #181818);
+    }
+    &.six {
+      background: linear-gradient(#b8a6b4, #d7d7d5, #181818);
+    }
+    &.seven {
+      background: linear-gradient(#bd94d8, #9394d4, #181818);
+    }
+    &.eight {
+      background: linear-gradient(#bbc0c2, #2c4236, #181818);
+    }
+    &.nine {
+      background: linear-gradient(#f3f3f3, #030406, #181818);
+    }
+    &.ten {
+      background: linear-gradient(#ebc3a0, #55432b, #181818);
+    }
+    &.eleven {
+      background: linear-gradient(#ffffff, #b67136, #181818);
+    }
+    &.twelve {
+      background: linear-gradient(#f7c004, #a44501, #181818);
+    }
+    &.thirhteen {
+      background: linear-gradient(#6da0cd, #0e1c5b, #181818);
+    }
+    &.fourteen {
+      background: linear-gradient(#622c14, #ea802c, #181818);
+    }
+    &.fifteen {
+      background: linear-gradient(#79604a, #140d07, #181818);
+    }
+
+    &.time {
+      opacity: 1;
+    }
+  }
+  // background-color: rgb(24, 24, 24);
+  &-item {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: down 1.5s ease-in-out;
+    &-q {
+      font-size: 17px;
+      font-weight: 500;
+    }
+    &-a {
+      cursor: pointer;
+      margin-top: 50px;
+      display: flex;
+      width: 50%;
+      justify-content: space-evenly;
+      &-yes {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

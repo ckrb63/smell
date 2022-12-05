@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Prolog from "./page/Prolog";
+import Test from "./page/Test";
+// import store from "./redux/store";
 
 function App() {
+  console.log(1);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Prolog />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
+    </BrowserRouter>
+    // </Provider>
   );
 }
 

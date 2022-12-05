@@ -1,0 +1,26 @@
+.home {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-pr {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: down 1s ease-in-out;
+  }
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
