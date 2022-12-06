@@ -1,3 +1,4 @@
 body {
   font-family: "NotoSansKR";
+  -webkit-tap-highlight-color: transparent;
 }
