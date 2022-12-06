@@ -28,8 +28,16 @@ function Prolog() {
         </div>
       )}
       {page === 1 && (
-        <div className="home-pr" onClick={prologClickHandler}>
-          {context}
+        <div className="home-pr">
+          <div className="home-pr-text">{context}</div>
+          <div
+            className="home-pr-start"
+            onClick={() => {
+              navigate("/test");
+            }}
+            aria-hidden="true">
+            시작하기
+          </div>
         </div>
       )}
     </div>

@@ -10,9 +10,18 @@
     height: 100vh;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation: down 1s ease-in-out;
+    &-start {
+      font-weight: 600;
+      padding: 7px;
+      // background-color: #ececec;
+      border: 1px solid #ececec;
+      border-radius: 5px;
+      margin-top: 40px;
+    }
   }
 }
 
