@@ -5,6 +5,18 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import classNames from "classnames";
 import PlayList from "./PlayList";
+import img1 from "./img/20.jpg";
+import img2 from "./img/21.jpg";
+import img3 from "./img/22.jpg";
+import img4 from "./img/23.jpg";
+import img5 from "./img/24.jpg";
+import img6 from "./img/25.jpg";
+import img7 from "./img/26.jpg";
+import img8 from "./img/27.jpg";
+import img9 from "./img/28.jpg";
+import img10 from "./img/29.jpg";
+import img11 from "./img/30.jpg";
+import img12 from "./img/31.jpg";
 
 function Test() {
   const [index, setIndex] = useState(0);
@@ -114,6 +126,7 @@ function Test() {
       ref={scrollRef}>
       {index === 12 && <PlayList type={type} />}
       <div className="test-item">
+        <img className="test-item-img" src={img1} alt="img1" />
         <div className="test-item-q">{list[0].q}</div>
         <div className="test-item-a">
           <div
@@ -134,6 +147,7 @@ function Test() {
       </div>
       {index >= 1 && (
         <div className="test-item">
+          <img className="test-item-img" src={img2} alt="img1" />
           <div className="test-item-q">{list[1].q}</div>
           <div className="test-item-a">
             <div
@@ -155,6 +169,7 @@ function Test() {
       )}
       {index >= 2 && (
         <div className="test-item">
+          <img className="test-item-img" src={img3} alt="img1" />
           <div className="test-item-q">{list[2].q}</div>
           <div className="test-item-a">
             <div
@@ -176,6 +191,7 @@ function Test() {
       )}
       {index >= 3 && (
         <div className="test-item">
+          <img className="test-item-img" src={img4} alt="img1" />
           <div className="test-item-q">{list[3].q}</div>
           <div className="test-item-a">
             <div
@@ -197,6 +213,7 @@ function Test() {
       )}
       {index >= 4 && (
         <div className="test-item">
+          <img className="test-item-img" src={img5} alt="img1" />
           <div className="test-item-q">{list[4].q}</div>
           <div className="test-item-a">
             <div
@@ -218,6 +235,7 @@ function Test() {
       )}
       {index >= 5 && (
         <div className="test-item">
+          <img className="test-item-img" src={img6} alt="img1" />
           <div className="test-item-q">{list[5].q}</div>
           <div className="test-item-a">
             <div
@@ -239,6 +257,7 @@ function Test() {
       )}
       {index >= 6 && (
         <div className="test-item">
+          <img className="test-item-img" src={img7} alt="img1" />
           <div className="test-item-q">{list[6].q}</div>
           <div className="test-item-a">
             <div
@@ -260,6 +279,7 @@ function Test() {
       )}
       {index >= 7 && (
         <div className="test-item">
+          <img className="test-item-img" src={img8} alt="img1" />
           <div className="test-item-q">{list[7].q}</div>
           <div className="test-item-a">
             <div
@@ -281,6 +301,7 @@ function Test() {
       )}
       {index >= 8 && (
         <div className="test-item">
+          <img className="test-item-img" src={img9} alt="img1" />
           <div className="test-item-q">{list[8].q}</div>
           <div className="test-item-a">
             <div
@@ -302,6 +323,7 @@ function Test() {
       )}
       {index >= 9 && (
         <div className="test-item">
+          <img className="test-item-img" src={img10} alt="img1" />
           <div className="test-item-q">{list[9].q}</div>
           <div className="test-item-a">
             <div
@@ -323,6 +345,7 @@ function Test() {
       )}
       {index >= 10 && (
         <div className="test-item">
+          <img className="test-item-img" src={img11} alt="img1" />
           <div className="test-item-q">{list[10].q}</div>
           <div className="test-item-a">
             <div
@@ -344,6 +367,7 @@ function Test() {
       )}
       {index >= 11 && (
         <div className="test-item">
+          <img className="test-item-img" src={img12} alt="img1" />
           <div className="test-item-q">{list[11].q}</div>
           <div className="test-item-a">
             <div

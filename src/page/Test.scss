@@ -69,20 +69,42 @@
     color: white;
     animation: down 1.5s ease-in-out;
     &-q {
+      z-index: 10;
       font-size: 17px;
       font-weight: 500;
       white-space: pre-wrap;
       text-align: center;
+      @media (min-width: 800px) {
+        font-size: 30px;
+      }
+    }
+    &-img {
+      // width: auto;
+      // width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0.3;
+      z-index: 1;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0 auto;
     }
     &-a {
+      z-index: 10;
       cursor: pointer;
       margin-top: 50px;
       display: flex;
       width: 50%;
       justify-content: space-between;
+      @media (min-width: 800px) {
+        justify-content: space-evenly;
+      }
       &-yes {
         display: flex;
         align-items: center;
+        @media (min-width: 800px) {
+          font-size: 20px;
+        }
       }
     }
   }

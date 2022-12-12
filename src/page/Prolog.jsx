@@ -9,7 +9,8 @@ function Prolog() {
 
   console.log(2);
   const text = () => {
-    if (page === 0) return "당신은 후각을 잃었습니다.";
+    if (page === 0) return "추억이 향기라면";
+    else if (page === 1) return "당신은 후각을 잃었습니다.";
     else return "향기를 기억해내기 위해 추억을 되돌아보시겠습니까?";
   };
 
@@ -17,7 +18,6 @@ function Prolog() {
 
   const prologClickHandler = () => {
     if (page < 1) setPage(page + 1);
-    else navigate("/test");
   };
 
   return (
@@ -28,6 +28,19 @@ function Prolog() {
         </div>
       )}
       {page === 1 && (
+        <div className="home-pr">
+          <div className="home-pr-text">{context}</div>
+          <div
+            className="home-pr-start"
+            onClick={() => {
+              setPage(page + 1);
+            }}
+            aria-hidden="true">
+            다음
+          </div>
+        </div>
+      )}
+      {page === 2 && (
         <div className="home-pr">
           <div className="home-pr-text">{context}</div>
           <div
